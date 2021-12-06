@@ -128,7 +128,7 @@ func addLineToGrid(grid *[1000][1000]int, line Line, wg *sync.WaitGroup) {
 		y_diff := line.y2 - line.y1
 		if y_diff < 0 {
 			y_positive = false
-			y_diff = int(math.Abs(float64(x_diff)))
+			//y_diff = int(math.Abs(float64(x_diff)))
 		}
 
 		//fmt.Printf("Line (X,Y):%d,%d --> %d,%d Diffs: X:%d %v Y:%d %v\n", line.x1, line.y1, line.x2, line.y2, x_diff, x_positive, y_diff, y_positive)
